@@ -12,7 +12,18 @@ body {
   margin: 0;
   background: linear-gradient(270deg, #cdf4fa, #f2f6f8);
 }
+a {
+  text-decoration: none;
+}
 
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .form-wrap {
   width: 100%;
   background-color: aqua;

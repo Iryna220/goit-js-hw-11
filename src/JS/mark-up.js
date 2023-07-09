@@ -1,9 +1,9 @@
 export function markupgallery({ hits }) {
     return hits
         .map(hit => {
-            return `< div class="photo-card" >
+            return `<div class="photo-card">
             <a class="gallery-link" href=${hit.largeImageURL}>
-  <img class="gallery-image" src="${hit.webformatURL}" alt="${hit.tags}" loading="lazy" /></a>
+  <img class="gallery-image"src="${hit.webformatURL}" alt="${hit.tags}" loading="lazy" /></a>
   <div class="info">
     <p class="info-item">
       <b>Likes: </b></br>${hit.likes}

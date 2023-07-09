@@ -1,5 +1,5 @@
 import './css/style.css';
-import { markupgallery } from './JS/mark-up';
+import  markupgallery  from './JS/mark-up';
 import ApiServiceConstructor from './JS/api-service';
 import LoadMoreBtn from './JS/loadmoreBnt';
 import Notiflix from 'notiflix';
@@ -52,6 +52,7 @@ async function fetchService() {
         appendMarkup(data);
         onPageScrollBy();
         lightbox.refresh();
+        
 
         if (galleryList.children.length === data.totalHits) {
             Notify.info(`We're sorry, but you've reached the end of search results.`);
@@ -60,6 +61,7 @@ async function fetchService() {
             loadMoreBtn.enable();
             Notify.success(`Hooray! We found ${data.totalHits} images.`);
         }
+        
     } catch (error) {
         Notify.info(`Error`);
 }
@@ -68,6 +70,7 @@ async function fetchService() {
 
 function appendMarkup(hits) {
     galleryList.insertAdjacentHTML('beforeend', markupgallery(hits));
+    
 }
 
 function clearContainer() {

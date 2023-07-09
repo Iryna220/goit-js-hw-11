@@ -12,7 +12,7 @@ export default class ApiServiceConstructor{
         this.searchQuery = '';
         this.page = 1;
     }
-    async fetchApiService() {
+    async fetchService() {
         try {
             const response = await axios.get(`${BASE_URL}?key=${API_KEY}&q=${this.searchQuery}&page=${this.page}&${PARAMETERS}`);
 

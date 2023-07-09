@@ -1,5 +1,5 @@
 import './css/style.css';
-import  markupgallery  from './JS/mark-up';
+import  { markupgallery }  from './JS/mark-up';
 import ApiServiceConstructor from './JS/api-service';
 import LoadMoreBtn from './JS/loadmoreBnt';
 import Notiflix from 'notiflix';

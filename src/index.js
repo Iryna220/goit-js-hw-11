@@ -54,7 +54,7 @@ async function fetchService() {
         lightbox.refresh();
         
 
-        if (galleryList.children.length === data.totalHits) {
+        if (galleryList.children.length === data.totalHits || apiserviceconstructor === 12) {
             Notify.info(`We're sorry, but you've reached the end of search results.`);
             loadMoreBtn.hide();
         } else {
@@ -89,5 +89,3 @@ window.scrollBy({
     });
 }
 
-// "Hooray! We found totalHits images."
-// "We're sorry, but you've reached the end of search results.".
